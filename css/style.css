@@ -378,7 +378,7 @@ figure {
   }
 }
 
-@media (min-width:600px) and (max-width:899px) {
+@media (max-width:899px) {
   .header .logo {
     width: 60px;
   }
@@ -418,8 +418,6 @@ figure {
     margin-bottom: 0;
   }
 }
-
-@media (max-width:599px) {}
 
 
 
