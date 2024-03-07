@@ -16,8 +16,8 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
-  color: #262626;
-  background: #fafafa;
+  color: #281e1c;
+  background: #f4f0e4;
 }
 
 #page {
@@ -50,7 +50,7 @@ body {
 }
 
 a {
-  color: #0a76db;
+  color: #281e1c;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -59,7 +59,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: #0a76db;
+  color: #f4f0e4;
   outline: none;
   text-decoration: none;
 }
@@ -243,6 +243,105 @@ figure {
   font-size: 30px;
 }
 
+/*header*/
+.header {
+  height: 100vh;
+  width: 100%;
+  padding: 0 100px;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .logo {
+  position: absolute;
+  top: 30px;
+  left: 75px;
+  width: 80px;
+}
+
+.header_contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header_contents .subtitle {
+  width: 330px;
+}
+
+.header_contents .title {
+  font-family: 'lotteriaddaga';
+  font-size: 65px;
+  margin-top: 10px;
+}
+
+.contact {
+  width: 200px;
+  height: 60px;
+  padding-top: 13px;
+  padding-left: 60px;
+  box-sizing: border-box;
+  margin: 20px 0;
+  border-radius: 30px;
+  border: 3px #281e1c solid;
+  position: relative;
+}
+
+.contact .blue_circle {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #5d86bc;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.contact p {
+  display: inline-block;
+  font-family: 'lotteriaddaga';
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.contact_table {
+  width: 300px;
+}
+
+.contact_table th {
+  text-align: start;
+  font-size: 18px;
+  padding: 5px 30px 5px 25px;
+}
+
+.contact_table td {
+  font-size: 18px;
+}
+
+.header_bg {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width:1200px) and (max-width:1599px) {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #fh5co-features {
   background: #FF9000;
 }
@@ -342,8 +441,7 @@ figure {
 }
 
 .fh5co-bg-dark {
-  background: #2F3C4F;
-  background: #0a76db;
+  background: #5d86bc;
 }
 
 .fh5co-bg-dark .fh5co-heading h2 {
@@ -355,8 +453,6 @@ figure {
   padding: 0;
   width: 90%;
 }
-
-
 
 .info li {
   width: 100%;
@@ -379,6 +475,23 @@ figure {
   width: 60%;
   display: inline-block;
   color: #717171;
+}
+
+/*profile*/
+.profile {
+  width: 300px;
+  height: 480px;
+  border-radius: 150px 150px 0 0;
+  background-color: #5d86bc;
+  position: relative;
+}
+
+.profile .pic2 {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+
 }
 
 .fh5co-social-icons {
@@ -508,7 +621,8 @@ figure {
   text-transform: uppercase;
   letter-spacing: 5px;
   font-weight: bold;
-  background: #e6e6e6;
+  background: #281e1c;
+  color: #f4f0e4;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -585,7 +699,7 @@ figure {
   top: 30px;
   left: 50%;
   margin-left: -21px;
-  background-color: #262626;
+  background-color: #281e1c;
   z-index: 100;
   display: table;
   -webkit-border-radius: 50%;
@@ -726,6 +840,7 @@ figure {
   float: left;
   height: 5px;
   box-shadow: none;
+  background-color: rgba(40, 30, 28, 0.1);
 }
 
 .progress-bar {
@@ -788,7 +903,7 @@ figure {
   display: table-cell;
   vertical-align: middle;
   height: 270px;
-  background: #fff;
+  background: #f4f0e4;
   opacity: 0;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -797,6 +912,7 @@ figure {
 
 .work .desc h3 {
   font-size: 20px;
+  font-weight: 600;
   -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
   transition: transform 0.3s, opacity 0.3s;
   -webkit-transform: translate3d(0, -15px, 0);
@@ -805,7 +921,7 @@ figure {
 
 .work .desc span {
   display: block;
-  color: #999999;
+  color: #281e1c;
   font-size: 14px;
   -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
   transition: transform 0.3s, opacity 0.3s;
@@ -1473,14 +1589,14 @@ input[type="text"] {
   display: inline-block;
   padding: 3px 15px;
   margin-right: 5px;
-  border: 2px solid #0a76db;
+  border: 2px solid #281e1c;
   font-weight: 500;
   transition: all 0.3s;
 }
 
 .project_btn:hover {
-  background-color: #0a76db;
-  color: #fafafa;
+  background-color: #281e1c;
+  color: #f4f0e4;
 }
 
 
